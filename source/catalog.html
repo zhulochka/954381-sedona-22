@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Форма</title>
+  </head>
+  <body class="page-body">
+    <div class="wrapper">
+      <header class="page-header">
+
+        <nav class="main-navigation">
+          <button class="main-navigation__toggle hidden" type="button">
+            <span class="visually-hidden">Закрыть или открыть меню</span>
+          </button>
+
+          <ul class="main-navigation__list navigation-list">
+            <li class="navigation-list__item"><a href="index.html">Главная</a></li>
+            <li class="navigation-list__item"><a href="#">Фото и видео</a></li>
+            <li class="navigation-list__item"><a href="catalog.html">Форма Отзыва</a></li>
+            <li class="navigation-list__item"><a href="#">HTML ACADEMY</a></li>
+          </ul>
+
+        </nav>
+        <a class="page-header__logo">
+          <img src="img/logo-sedona.svg" width="101" height="84"
+                alt="Логотип компании Седона">
+        </a>
+      </header>
+
+      <main class="page-main">
+        <div class="page-main__introduction">
+          <div class="page-main__introduction-picture">
+            <img src="img/sedona.svg" width="229" height="39" lang="en" alt="Sedona">
+          </div>
+          <h1 class="page-main__introduction-headihg">Фото и видео</h1>
+        </div>
+
+        <section class="page-main__photos photos">
+          <h2 class="visually-hidden">Фотографии</h2>
+          <p class="photos__text">Не можете решиться на путешествие из-за курса?
+            Фотографии помогут Вам забыть о политике и экономике.</p>
+          <ul class="photos__list">
+            <li class="photos__item">
+              <a class="photos__image" href="#">
+                <img src="https://via.placeholder.com/280x280" width="280" height="280" alt="дорога с автомобилем">
+              </a>
+              <p class="photos__title">Неродные просторы</p>
+              <p class="photos__author">Автор фото: Борис</p>
+              <button class="photos__likes-button" type="button"><span class="photos__likes-number">1350</span></button>
+            </li>
+            <li class="photos__item">
+              <a class="photos__image" href="#">
+                <img src="https://via.placeholder.com/280x280" width="280" height="280" alt="местная растительность">
+              </a>
+              <p class="photos__title">Местная растительность</p>
+              <p class="photos__author">Автор фото: Сергей</p>
+              <button class="photos__likes-button" type="button"><span class="photos__likes-number">143</span></button>
+            </li>
+            <li class="photos__item">
+              <a class="photos__image" href="#">
+                <img src="https://via.placeholder.com/280x280" width="280" height="280" alt="дорога на север">
+              </a>
+              <p class="photos__title">Дорога на север</p>
+              <p class="photos__author">Автор фото: Петр</p>
+              <button class="photos__likes-button" type="button"><span class="photos__likes-number">96</span></button>
+            </li>
+            <li class="photos__item">
+              <a class="photos__image" href="#">
+                <img src="https://via.placeholder.com/280x280" width="280" height="280" alt="мост Дьявола">
+              </a>
+              <p class="photos__title">Мост Дьявола</p>
+              <p class="photos__author">Автор фото: Антон</p>
+              <button class="photos__likes-button" type="button"><span class="photos__likes-number">254</span></button>
+            </li>
+          </ul>
+        </section>
+
+        <section class="page-main__videos videos">
+          <h2 class="visually-hidden">Видео</h2>
+          <p class="videos__title">Все еще сомневаетесь?</p>
+          <p class="videos__text">Смотрите видеопрезентацию и скорее за билетами,
+            пока они не подорожали в очередной раз!</p>
+          <ul class="videos__list">
+            <li class="videos__item video">
+              <a class="video__link" href="#">
+                <picture>
+                  <source srcset="https://via.placeholder.com/320x201" type="image/webp">
+                  <img class="video__media" src="#" width="320" height="201" alt="видеопрезентация">
+                </picture>
+              </a>
+              <div class="video__player player">
+                <div class="player__range range">
+                  <div class="range__scale"></div>
+                  <button
+                    class="range__toggle" type="button"
+                    aria-label="двигать вправо или влево для прокрутки видео">.
+                  </button>
+                </div>
+                <button class="player__control player__control--replay" type="button" aria-label="запустить снова">
+                  replay</button>
+                <button class="player__control player__control--subtitles" type="button" aria-label="субтитры">
+                  subtitles</button>
+                <button class="player__control player__control--fullscreen" type="button"
+                        aria-label="полноэкранный режим">fullscreen</button>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+      </main>
+
+      <footer class="page-footer">
+        <div class="page-footer__hashtag" lang="en">
+          <b>#visitSEDONA</b>
+        </div>
+        <section class="page-footer__social social">
+          <h2 class="visually-hidden">Мы в соцсетях</h2>
+          <ul class="social__list ">
+            <li class="social__item">
+              <a class="social__link" href="https://twitter.com/">
+                <span class="visually-hidden">Седона в Твиттер</span>
+
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="https://www.facebook.com/">
+                <span class="visually-hidden">Седона в Фейсбук</span>
+
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="https://www.youtube.com/">
+                <span class="visually-hidden">Седона в Ютьюб</span>
+
+              </a>
+            </li>
+          </ul>
+        </section>
+        <p class="page-footer__copyright copyright">
+          Разработано
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          </a>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
