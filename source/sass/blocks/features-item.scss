@@ -1,0 +1,18 @@
+.features-item__container {
+  background-color: $theme-color;
+  color: $white;
+}
+
+.features-item--other {
+  background-color: $background-features-other;
+}
+
+.features-item__heading {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.features-item__heading--other {
+  color: $black;
+}
