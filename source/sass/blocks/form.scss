@@ -1,0 +1,33 @@
+.form {
+  line-height: 26px;
+}
+
+.form__legend {
+  font-size: 18px;
+  font-weight: 700;
+  color: $black;
+}
+
+.form__label--radio,
+.form__label--checkbox {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: none;
+  color: $black;
+}
+
+.form__control {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: $black;
+  background-color: $background;
+  border: none;
+}
+
+.form__control::placeholder {
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
