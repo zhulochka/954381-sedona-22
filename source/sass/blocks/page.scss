@@ -8,8 +8,15 @@
 }
 
 .page__body {
-  min-height: 100%;
-  margin: 0;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  min-height: 100vh;
+  margin: auto;
   background-color: $background;
   color: $small-text;
+}
+
+.page__wrapper {
+  background-color: $white;
 }
