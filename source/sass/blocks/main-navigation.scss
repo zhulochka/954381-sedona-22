@@ -1,6 +1,10 @@
 .main-navigation {
   @media (min-width: $tablet-width) {
-    //padding-right: 14px;
-    //padding-left: 34px;
+    padding-right: 14px;
+    padding-left: 34px;
   }
+}
+
+.main-navigation__toggle {
+  text-align: right;
 }
