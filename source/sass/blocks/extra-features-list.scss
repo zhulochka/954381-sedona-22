@@ -1,3 +1,12 @@
 .extra-features-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+  text-align: left;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+  }
 }

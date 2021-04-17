@@ -1,5 +1,25 @@
+.page-footer {
+  display: grid;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 60px;
+    padding-left: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 120px;
+    padding-left: 104px;
+  }
+}
+
 .page-footer__hashtag {
   font-size: 21px;
   line-height: 26px;
   color: $black;
+}
+
+.page-footer__social {
+  justify-self: center;
 }

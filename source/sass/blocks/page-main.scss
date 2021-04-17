@@ -1,3 +1,7 @@
+.page-main__introduction {
+  text-align: center;
+}
+
 .page-main__introduction-picture {
   background-color: $background-mountain;
   background-image: url("../img/back-mountain.jpg");
@@ -10,4 +14,8 @@
   line-height: 26px;
   font-weight: 700;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }

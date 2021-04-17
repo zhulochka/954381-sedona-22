@@ -1,6 +1,16 @@
+.extra-features-item:nth-child(2) {
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
+}
+
 .extra-features-item__heading {
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }

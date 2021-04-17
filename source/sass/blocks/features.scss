@@ -3,7 +3,33 @@
 }
 
 .features__heading {
-  font-size: inherit;
+  font-size: 14px;
   line-height: 26px;
   font-weight: inherit;
+}
+
+.features__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr;
+  }
+}
+
+.features__item:nth-child(1) {
+  @media (min-width: $tablet-width) {
+    grid-row: 1;
+    grid-column: 1/-1;
+  }
+}
+
+.features__item:nth-child(2) {
+  @media (min-width: $tablet-width) {
+    grid-row: 2;
+    grid-column: 1/-1;
+  }
 }
