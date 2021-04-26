@@ -1,11 +1,20 @@
 .form {
   line-height: 26px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .form__legend {
   font-size: 18px;
   font-weight: 700;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .form__label--radio,
@@ -30,4 +39,49 @@
   line-height: inherit;
   font-weight: inherit;
   color: inherit;
+}
+
+.form__label-hidden {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.form__comment {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.form__fieldset--impression {
+  @media (min-width: $tablet-width) {
+    order: -1;
+    grid-column: 1/2;
+  }
+}
+
+.form__fieldset--name {
+  @media (min-width: $tablet-width) {
+    grid-column: 2/-1;
+  }
+}
+
+.form__fieldset--contacts {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+  }
+}
+
+.form__fieldset--sights {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+  }
+}
+
+.form__fieldset--emotion {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+  }
 }

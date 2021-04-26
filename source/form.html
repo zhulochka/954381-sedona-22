@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru" class="page">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Форма</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
-    <div class="wrapper">
+    <div class="page__wrapper container">
       <header class="page-header">
 
         <nav class="main-navigation">
-          <button class="main-navigation__toggle button hidden" type="button">
+          <button class="main-navigation__toggle button button--hidden" type="button">
             <span class="visually-hidden">Закрыть или открыть меню</span>
           </button>
 
@@ -72,7 +73,7 @@
             <legend class="form__legend">Контактная информация:</legend>
             <ul class="form__list form__list--contacts">
               <li class="form__wrap form__wrap--contacts">
-                <label class="form__label form__label--tel" for="tel">Контактный телефон<sup>*</sup>:</label>
+                <label class="form__label form__label--tel" for="tel"><span class="form__label-hidden">Контактный</span> телефон<sup>*</sup>:</label>
                 <input
                   class="form__control form__control--tel"
                   type="tel"
@@ -150,6 +151,7 @@
             <button class="form__button button" type="submit">
               Отправить отзыв
             </button>
+            <p class="form__comment"><sup>*</sup> — обязательные поля</p>
           </div>
         </form>
       </main>
@@ -201,7 +203,7 @@
         <p class="modal__title">Ваш отзыв отправлен! </p>
         <p class="modal__text">Спасибо за Ваше участие, Ваш отзыв уже поступил к нам.
           В ближайшее время мы опубликуем его на сайте.</p>
-        <div class="modal__container">
+        <div class="modal__wrapper">
           <button class="modal__button button button--modal" type="button">Закрыть окно</button>
         </div>
       </section>

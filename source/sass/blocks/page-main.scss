@@ -9,7 +9,8 @@
   background-size: cover;
 }
 
-.page-main__introduction-title {
+
+.page-main__introduction-slogan {
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
@@ -17,5 +18,16 @@
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
+  }
+}
+
+.page-main__introduction-title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
   }
 }

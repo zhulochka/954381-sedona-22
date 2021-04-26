@@ -10,6 +10,10 @@
 
 .button--modal {
   font-size: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .button--likes {
