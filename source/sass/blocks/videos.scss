@@ -1,3 +1,13 @@
+.videos__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+  }
+}
+
 .videos__title {
   font-size: 18px;
   line-height: 26px;
